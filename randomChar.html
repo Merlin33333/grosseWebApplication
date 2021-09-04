@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="Css.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Meine Webseite</title>
+</head>
+
+
+
+<script>
+    $(document).ready(function () {
+        var padding = 20;
+        var size = 1;
+        var rainChars = 'RAINITSRAININGuiasbiubwzebf8ewqzbUIASHIUBZVEBTVBUZSNCJND';
+        var fxeffect = (Math.floor(Math.random() * 1000));
+
+        $("#a").css("font-size", size + "em");
+
+        var rainyrain = function () {
+            $("#a").offset({ top: padding });
+            $("#a").css("padding-left", fxeffect);
+            size++
+            padding++;
+            $("#a").css("font-size", size + "em");
+            if (padding > 50) {
+                padding = 20;
+                size = 1;
+
+                var digit = rainChars.charAt(Math.floor(Math.random() * rainChars.length));
+                $("#a > p").text(digit);
+            }
+        };
+
+        setInterval(rainyrain, 50);
+    });
+</script>
+
+<style >
+    body {
+	background: black;
+	color: gray;
+	
+}
+</style>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Metro-M.svg/2048px-Metro-M.svg.png" alt="logo" style="width:40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="JQuary.html">JQuery</a>
+            </li>
+     
+            <li class="nav-item">
+                <a class="nav-link" href="tabelle.html">JQuery Tabelle</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="xydetector.html">x, y detector</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="randomChar.html">Random Char rain</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <!-- Nav ende-->
+
+
+
+    <div style="margin-left: 200px; margin-right: 200px;">
+
+        <br>
+        <br>
+        <h1>Meine jQuery Webseite mit Boostrap</h1>
+        <br>
+        <br>
+    
+        
+        <p>Meine Beispiel</p>
+
+        
+<p> JQuery random rainChars</p>
+
+      
+        <!--Aktiver in dem ID="a"-->
+        <div id="a">
+            <p>Jquery random fallende Buchstaben (aktiven mit id="a"</p>
+        </div>
+        <br>
+       
+
+
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted" >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 " >
+  
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>WebProjekt
+            </h6>
+            <p>
+             Eine kleine Webseite um mein können darzustellen.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="https://github.com/Merlin33333/JavaWebapplication.RGBtoHEX">RGBToHex Java Web</a>
+            </p>
+            <p>
+              <a href="#!" class="https://github.com/Merlin33333/Merlin33333.Ausflugsplanungt">Ausflugsplanung Java Web</a>
+            </p>
+        
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="https://merlin33333.github.io/Merlin33333.PortfolioPraktikum/" class="text-reset">Über mich</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+  
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Aargau, MS 8008, CHE </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              muster@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +41 00 000 000</p>
+            <p><i class="fas fa-print me-3"></i> +41 00 000 000</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+   
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color:rgb(82, 82, 82);">
+      © 2021 Copyright:  Merlin van der Kolk 2021
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</html>
